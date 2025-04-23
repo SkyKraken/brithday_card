@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://storage.needpix.com/rsynced_images/animal-print-2556284_1280.jpg'); /* Replace with small cow print if needed */
+      background-size: cover;
+      text-align: center;
+      background-repeat:no-repeat;
+    }
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 0.5em 1em;
+      border-radius: 15px;
+    }
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .card {
+      margin: 50px auto;
+      max-width: 500px;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #a8d5ba, #4caf50);
+      border-radius: 20px;
+      display: none;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      color: #fff;
+    }
+    .card h2 {
+      margin-bottom: 20px;
+    }
+    .card textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      resize: none;
+      font-size: 1em;
+    }
+    .cow-drawing-placeholder {
+      margin-top: 20px;
+      width: 100%;
+      height: 200px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px dashed white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      font-style: italic;
+    }
+    button:hover {
+        color:black;
+        background-color:yellow;
+    }
+    div img {
+      width:200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Fancy Remzi!</h1>
+  <br>
+  <button onclick="showCard()">Click me</button>
+
+  <div class="card" id="birthdayCard">
+    <h2>My lovely fancy Remzi</h2>
+    <textarea>My amazing fancy Remzi, I know you're in so much pain now the last thing on your mind is your birthday, but I'm so happy you were born and I wanted to make you smile even for just a second. I'm sorry I wasn't next to you when you got the news. I hope you're taking comfort from your family, who I'm sure loves you very much. I know it is far from being a happy birthday, but I hope there was a tiny smile on your face when you got the card and saw the cow I drew for you. Love, Marmotta. 
+    </textarea>
+    <div class="cow-drawing-placeholder">
+      <img alt="cow drawing with ballons" src="https://i.postimg.cc/jj1q4Xhg/cow.png">
+    </div>
+  </div>
+
+  <audio id="mooSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+
+  <script>
+    function showCard() {
+      const audio = document.getElementById("mooSound");
+      audio.play();
+      document.getElementById("birthdayCard").style.display = 'block';
+    }
+  </script>
+</body>
+</html>
